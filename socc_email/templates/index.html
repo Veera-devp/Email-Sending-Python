@@ -1,0 +1,32 @@
+{% load static %}
+{% block content %}
+<center>
+    <div class="regitems">
+        <br/><br/>
+        <br/><br/>
+    <div>
+        <h1>Send Mail to the person</h1>
+    </div>
+    <form  method="post">
+        {% csrf_token %}
+        <div class="form-group">
+        <label class="form-label mt-4">Enter Username:</label>
+            <input type="text" placeholder="username" name="user" class="form-control" style="width:500px">
+            <br/>
+            <br/>
+       <label class="form-label mt-4">Enter Email: </label>
+            <input text="text" placeholder="Email" name="email"email class="form-control" style="width:500px">
+            <br/>
+            <br/>
+        </div>
+                <input type="submit" class="btn btn-primary">
+         <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </form>
+</center>
+{% endblock %}
